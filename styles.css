@@ -1,3 +1,6 @@
+* {
+	font-family: sans-serif;
+}
 header {
 	background-color: #cecece;
 	padding-bottom: 40px;
@@ -7,13 +10,13 @@ header {
 
 .topRight {
 	position: absolute;
-	right: 0;
+	right: 5px;
 	bottom: 15px;
 }
 
 .topLeft {
 	position: absolute;
-	left: 0;
+	left: 5px;
 	bottom: 15px;
 }
 
@@ -24,12 +27,13 @@ header {
 
 .topRight li a {
 	color: purple;
-	text-decoration: none
+	text-decoration: none;
+	margin: 0 5px;
 }
 
-.topLeft h1 {
+.topLeft {
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 main {
@@ -50,6 +54,16 @@ nav ul li {
 	font-size: 1em;
 }
 
+.leftMost {
+	margin-right: -7px;
+	border-radius: 10% 0 0 10%
+}
+
+.rightMost {
+	margin-left: -7px;
+	border-radius: 0 10% 10% 0
+}
+
 nav ul li a {
 	text-decoration: none;
 	color: black;
@@ -57,4 +71,22 @@ nav ul li a {
 
 .fa-search {
 	color: black;
+}
+
+.fa-star, .results {
+	margin: 5px;
+	color: grey;
+	font-size: .75em;
+	line-height: 2.5em;
+}
+
+.fa-star:hover {
+	color: yellow;
+}
+
+.resultLink {
+	text-decoration: none;
+	font-size: 1.15em;
+	color: blue;
+	font-weight: bold;
 }
